@@ -1,0 +1,99 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 2rem;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    margin: 1rem 0;
+    color: #666;
+}
+
+hr {
+    margin: 1rem 0;
+    border: none;
+    border-top: 2px solid #ccc;
+}
+
+/* Word Grid */
+.grid {
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+input[type="text"] {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    transition: 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: #0078d7;
+    background: #eef6ff;
+    outline: none;
+}
+
+
+
+/* Color Feedback */
+.correct {
+    background-color: #6aaa64; /* Green */
+    color: white;
+    border: none;
+}
+
+.close {
+    background-color: #c9b458; /* Yellow */
+    color: white;
+    border: none;
+}
+
+.wrong {
+    background-color: #787c7e; /* Gray */
+    color: white;
+    border: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    input[type="text"] {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
+    }
+
+    #submit {
+        font-size: 0.9rem;
+    }
+
+    .keyboard button {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+}
